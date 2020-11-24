@@ -6,13 +6,6 @@ import {
   RandomComponent,
 } from '../components';
 
-// jest.mock('../context', () => {
-//   return {
-//     ...jest.requireActual('./context');
-//     Provider: ({ children }) => <div></div>
-//   };
-// });
-
 describe('renderApp', () => {
   test('control new context', () => {
     const { getByDisplayValue, getByTestId } = render(<Provider><RandomComponent /></Provider>);
